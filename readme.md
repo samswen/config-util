@@ -1,13 +1,23 @@
+
+# config-util
+
+An configuration util to support multiple environments and environment variable overwrite.
+
+## how to install
+
+    npmm install @samwen/config-util --save
+
+## how to use
+
+    //index.js
+
     const ConfigUtil = require('@samwen/config-util');
       
     const config = new ConfigUtil(require('./config.js'));
 
-    console.log('key_all = ' + config.get('key_all'));
+    console.log('key_all = ' + config.get('key_all', 'default'));
 
-stage_env=production node index.js
-key_all=new_value node index.js
-
-Here is a typical configuration file to support multiple running environments:
+### Here is a typical configuration file to support multiple running environments:
 
     // test-config.js
     
@@ -30,4 +40,10 @@ Here is a typical configuration file to support multiple running environments:
     }
     
     module.exports = config;
+
+### environment variable overwrite
+
+    $ stage_env=production node index.js
+
+    $ key_all=new_value node index.js
 
