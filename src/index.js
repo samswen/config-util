@@ -3,12 +3,11 @@
 const ENV_NAME = 'stage_env';
 
 class ConfigUtil {
-    constructor(config_file, stage_env) {
-        if (config_file) {
-            this.config = require(config_file);
-        } else {
-            this.config = require('../../../config.js');  // project root directory
+    constructor(config, stage_env) {
+        if (!config) {
+            throw new Error('missing required config!');
         }
+        this.config = config;
         if (stage_env) {
             this.stage_env = stage_env;
         } else {
