@@ -1,7 +1,7 @@
 Here is a typical configuration file to support multiple running environments:
 
     // test-config.js
-
+    
     const config = {
 
         key_comm: 'common value',
@@ -19,6 +19,6 @@ Here is a typical configuration file to support multiple running environments:
         },
 
     }
-
+    
     module.exports = config;
 
