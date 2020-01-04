@@ -1,4 +1,3 @@
-This util helps developer to run the same code works under developemt, qa, staging and production.
 Here is a typical configuration file to support multiple running environments:
 
 <code>
