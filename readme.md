@@ -17,7 +17,7 @@ An configuration util to support multiple environments and environment variable 
 
     console.log('key_all = ' + config.get('key_all', 'default'));
 
-### Here is a typical configuration file to support multiple running environments:
+### here is a typical configuration file to support multiple running environments:
 
     // config.js
     
