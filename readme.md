@@ -19,7 +19,7 @@ An configuration util to support multiple environments and environment variable 
 
 ### Here is a typical configuration file to support multiple running environments:
 
-    // test-config.js
+    // config.js
     
     const config = {
 
