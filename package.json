@@ -1,6 +1,6 @@
 {
   "name": "@samwen/config-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a configuration util to support multiple running environments",
   "main": "src/index.js",
   "directories": {
