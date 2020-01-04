@@ -44,6 +44,8 @@ An configuration util to support multiple environments and environment variable 
 ### environment variable overwrite
 
     $ stage_env=production node index.js
+    key_all = production config value
 
     $ key_all=new_value node index.js
+    key_all = new_value
 
