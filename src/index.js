@@ -10,12 +10,14 @@ class ConfigUtil {
         this.config = config;
         if (stage_env) {
             this.stage_env = stage_env;
+            process.env[ENV_NAME] = stage_env; // help for pass to child process
         } else {
             if (process.env.hasOwnProperty(ENV_NAME) && 
                 process.env[ENV_NAME]) {
                 this.stage_env = process.env[ENV_NAME].trim();
             } else {
                 this.stage_env = 'development';
+                process.env[ENV_NAME] = this.stage_env; // help for pass to child process
             }
         }
         this.values = {};
