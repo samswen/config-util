@@ -1,4 +1,7 @@
+/* eslint-disable no-prototype-builtins */
 'use strict'
+
+const process = require('process');
 
 const ENV_NAME = 'stage_env';
 
