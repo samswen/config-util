@@ -48,6 +48,10 @@ class ConfigUtil {
         this.values[name] = value;
         return value;
     }
+
+    set(name, value) {
+        this.values[name] = value;
+    }
 }
 
 module.exports = ConfigUtil;
